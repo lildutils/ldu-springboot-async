@@ -13,8 +13,8 @@ public class LDuAsyncExceptionHandler extends SimpleAsyncUncaughtExceptionHandle
 	@Override
 	public void handleUncaughtException( Throwable t, Method method, Object... params )
 	{
-		LOGGER.error( "[ASYNC];[ERROR];" + method.toString() + ";" + t.getMessage() );
-		LOGGER.debug( "[ASYNC][DEBUG] " + method.toString() + ": " + t );
+		LOGGER.error( "[ASYNC] [ERROR] " + method.toString() + ": " + t.getMessage() );
+		LOGGER.debug( "[ASYNC] [DEBUG] " + method.toString() + ": " + t );
 	}
 
 }

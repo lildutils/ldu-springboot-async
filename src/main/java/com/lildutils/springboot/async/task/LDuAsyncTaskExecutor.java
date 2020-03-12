@@ -9,10 +9,18 @@ public class LDuAsyncTaskExecutor extends SimpleAsyncTaskExecutor
 {
 	private static final Logger LOGGER = LoggerFactory.getLogger( LDuAsyncTaskExecutor.class );
 
+	public LDuAsyncTaskExecutor( String taskPrefix )
+	{
+		super( taskPrefix );
+	}
+
 	@Override
 	protected void doExecute( Runnable task )
 	{
-		LOGGER.info( "[ASYNC] [INFO] Running: " + task.getClass().toString() );
+		if( LOGGER.isInfoEnabled() )
+		{
+			LOGGER.info( "[ASYNC] [INFO] Running: " + task.getClass().toString() );
+		}
 		super.doExecute( task );
 	}
 

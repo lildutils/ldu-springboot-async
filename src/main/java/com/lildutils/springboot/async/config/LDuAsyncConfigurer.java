@@ -13,7 +13,7 @@ import com.lildutils.springboot.async.ex.handler.LDuAsyncExceptionHandler;
 import com.lildutils.springboot.async.task.LDuAsyncTaskExecutor;
 
 @Configuration
-@EnableAsync
+@EnableAsync(proxyTargetClass = true)
 public class LDuAsyncConfigurer implements AsyncConfigurer
 {
 	@Autowired

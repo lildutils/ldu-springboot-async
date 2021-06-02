@@ -1,18 +1,17 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
-bin/
-build/
-dist/
-target/
-zip/
+### Gradle ###
+/gradle/
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# dependencies
+### Maven ###
 .m2/
-.gradle/
-lib/
+target/
 
-# STS
+### STS ###
 .apt_generated
 .classpath
 .factorypath
@@ -20,26 +19,37 @@ lib/
 .settings
 .springBeans
 .sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# IntelliJ IDEA
+### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-# NetBeans
+### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /nbdist/
 /.nb-gradle/
 
-# VS Code
+### VS Code ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 .history/*
 
-# ...for development
-.ldt*
+### LilDutils ###
+build/
+DEV-INF/
+dist/
+logs/
+tmp/
+zip/
+configs.dev-inf.json
+.ldt
+.ldt.bat
+.ldt.sh

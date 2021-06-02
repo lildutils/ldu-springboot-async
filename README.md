@@ -2,23 +2,41 @@
 
 ## Prerequisites
 
-* [JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) - jdk1.8.0_201
-* [AdoptOpenJDK](https://adoptopenjdk.net/index.html) - jdk8u242-b08
-* [Gradle](https://gradle.org/releases/) - 5.6.2
-* [IDE *(recommended)*](https://spring.io/tools) - latest
+* [Git](https://git-scm.com/download) - ^2.20.1
+* [Gradle](https://gradle.org/releases/) - ^6.5.1
+* [JDK](https://adoptopenjdk.net/index.html) - ^JDK11
+
+## Configurations
+
+```properties
+ldu.springboot.async.thread-name-prefix=someCustomThreadPrefix
+ldu.springboot.async.perf-logging-enabled=true|false
+```
 
 ## Development
 
-### Install
+### Download dependencies
 
-```Gradle
-gradle init
+```sh
+gradlew --refresh-dependencies
 ```
 
-### Build
+## Analyze
 
-```Gradle
-gradle build
+```sh
+gradlew check
+```
+
+## Test
+
+```sh
+gradlew test
+```
+
+## Build
+
+```sh
+gradlew build
 ```
 
 ## About

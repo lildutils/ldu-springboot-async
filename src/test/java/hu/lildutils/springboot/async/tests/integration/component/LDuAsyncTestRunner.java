@@ -9,7 +9,7 @@ import hu.lildutils.springboot.async.EnableLDuAsync;
 @EnableLDuAsync
 public class LDuAsyncTestRunner {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         SpringApplication.run(LDuAsyncTestRunner.class, args);
     }
 

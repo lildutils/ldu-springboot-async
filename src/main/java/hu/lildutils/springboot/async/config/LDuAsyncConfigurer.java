@@ -15,20 +15,20 @@ import hu.lildutils.springboot.async.task.LDuAsyncTaskExecutor;
 @Configuration
 @EnableAsync
 public class LDuAsyncConfigurer implements AsyncConfigurer {
-	public static final String CONFIG_THREAD_NAME_PREFIX = "ldu.springboot.async.thread-name-prefix";
-	public static final String CONFIG_PERF_LOGGING_ENABLED = "ldu.springboot.async.perf-logging-enabled";
+    public static final String CONFIG_THREAD_NAME_PREFIX = "ldu.springboot.async.thread-name-prefix";
+    public static final String CONFIG_PERF_LOGGING_ENABLED = "ldu.springboot.async.perf-logging-enabled";
 
-	@Autowired
-	private Environment environment;
+    @Autowired
+    private Environment environment;
 
-	@Override
-	public Executor getAsyncExecutor() {
-		return new LDuAsyncTaskExecutor(environment);
-	}
+    @Override
+    public Executor getAsyncExecutor() {
+        return new LDuAsyncTaskExecutor(environment);
+    }
 
-	@Override
-	public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
-		return new LDuAsyncUncaughtExceptionHandler();
-	}
+    @Override
+    public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
+        return new LDuAsyncUncaughtExceptionHandler();
+    }
 
 }

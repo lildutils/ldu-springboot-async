@@ -1,4 +1,4 @@
-package hu.lildutils.springboot.async.tests.integration.component;
+package hu.lildutils.springboot.async.tests.integration.runner;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

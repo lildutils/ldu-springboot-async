@@ -1,4 +1,4 @@
-package hu.lildutils.springboot.async.tests.integration.component;
+package hu.lildutils.springboot.async.tests.integration.runner;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

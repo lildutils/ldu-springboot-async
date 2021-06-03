@@ -7,10 +7,12 @@ plugins {
 
 group = 'hu.lildutils.springboot.async'
 
-version = '2.0.0'
+version = '2.0.1'
 
 sourceCompatibility = '11'
 targetCompatibility = '11'
+
+// dependencies
 
 repositories {
 	mavenCentral()
@@ -20,6 +22,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+
+// analyze
 
 checkstyle {
     toolVersion '8.43'
@@ -34,9 +38,13 @@ tasks.withType(Checkstyle) {
     }
 }
 
+// test
+
 test {
 	useJUnitPlatform()
 }
+
+// build
 
 bootJar {
 	enabled = false

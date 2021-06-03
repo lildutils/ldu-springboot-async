@@ -11,9 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-import hu.lildutils.springboot.async.tests.integration.component.LDuAsyncTestComponent;
-import hu.lildutils.springboot.async.tests.integration.component.LDuAsyncTestRunner;
-import hu.lildutils.springboot.async.tests.integration.component.LDuAsyncTestService;
+import hu.lildutils.springboot.async.tests.integration.runner.LDuAsyncTestComponent;
+import hu.lildutils.springboot.async.tests.integration.runner.LDuAsyncTestRunner;
+import hu.lildutils.springboot.async.tests.integration.runner.LDuAsyncTestService;
 
 @SpringBootTest(classes = LDuAsyncTestRunner.class)
 @ActiveProfiles("test")
